@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug Solution</title>
+</head>
+<body>
+  <div id="myDiv" style="background-color: yellow;">
+    This text should be visible.
+  </div>
+  <script>
+    // Correct solution: set the styles at once, or set the display property later 
+    //document.getElementById("myDiv").style.display = "none";
+  </script>
+</body>
+</html>
