@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug</title>
+</head>
+<body>
+  <div id="myDiv">
+    This text should be visible.
+  </div>
+  <script>
+    // Incorrectly setting the display property to "none" on an element that already has a style attribute
+    document.getElementById("myDiv").style.display = "none";
+    document.getElementById("myDiv").style = "background-color: yellow;";
+  </script>
+</body>
+</html>
